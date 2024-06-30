@@ -1,5 +1,6 @@
 resource "google_storage_bucket" "my-bukcet" {
-  name          = "image-store.com"
+  name          = var.bucketname
   location      = "US"
   force_destroy = true
+  storage_class = "NEARLINE"
 }  
