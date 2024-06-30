@@ -26,4 +26,4 @@ volumes:
 
 # docker run  -it -d --name db -v db_data:/var/lib/mysql --restart -e 
 
-# 2 tier - web app +
+# 2 tier - web app 
