@@ -1,0 +1,3 @@
+variable "computeName" {
+    type = string
+}
