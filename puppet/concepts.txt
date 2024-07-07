@@ -1,0 +1,56 @@
+resource_type { ‘resource_
+    attribute value,
+    …
+}
+
+package { 'nginx':
+
+     ensure =>'installed'/,
+
+}
+
+Basics of Writing a Puppet manifests
+
+1. resource [n numbers]
+2. Resource types
+3. ur manfiest should end with *.pp extention
+
+package { 'nginx':
+
+     ensure =>'installed'/,
+
+}
+
+file { 
+  # attributes
+}
+
+1. Conditions
+2. Loops  -- > [ ]
+3. variables  ---- > "".123, 'true', [0,1,2,3]
+4. Modules  --- a collection of manifests organized together in a predefined way to facilate sharing and reusing.
+
+Loops:
+
+$package= ['nginx','mysql']
+
+package { $package':
+    onlyif shell=='debian'
+     ensure =>'installed'/,
+
+}
+
+Conditions --->
+
+onlyif
+
+4. Modules
+1. Generate the module structure ( puppet module generate modulename)
+2. Create or Build the module ( classes )
+3. Reuse or referernce or Install the module
+
+####
+ When you have more than one class in your module ----- we have to create class file with the same name of the module
+
+If you want to export you module to other system or clients for their ----------
+### Build or package your modules ( using pdk build) 
