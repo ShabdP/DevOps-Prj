@@ -20,5 +20,5 @@
 
     - name: Print the previous result
       ansible.builtin.debug:
-        msg: {{ OUTPUT }}
+        msg: "{{ OUTPUT }}"
 
