@@ -1,0 +1,11 @@
+- name: Sample role
+  hosts: localhost
+  roles:
+   - demo
+
+
+
+
+
+
+# roles ->>>>> frontend , backend , mysql
